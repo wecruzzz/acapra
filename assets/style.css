@@ -24,13 +24,74 @@ body {
   width: 300px;
   border-radius: 10px;
   margin-left: 40px;
+  margin-right: 190px;
 
 }
 
 .conteudo p {
   margin-left: 40px;
 }
+.gatamimi{
+  margin-left: 40px;
+}
 
+/* ------------------------------------------------fomrcontato----------------------------------------- */
+
+.formulario{
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+}
+
+ h1 {
+      color: #7c5eb3;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    form {
+      width: 700px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 15px;
+      box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form button{
+      border-radius: 10px;
+      width: 150px;
+    }
+form button:hover{
+  background-color: #7c5eb3;
+}
 /* -----------------------------------------------------HEADER----------------------------------------- */
 
 .top-bar {
@@ -95,6 +156,23 @@ body {
   margin-left: 5px;
   font-size: 0.8em;
 }
+
+/* ------------------------------------------------------Footer----------------------------------- */
+footer {
+  background-color: #7c5eb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 150px;
+}
+footer img {
+  width: 150px;
+}
+footer a {
+  color: black;
+}
+
 
 /* ------------------------------------------------Menu flutuante Institucional---------------------------------------- */
 
@@ -178,7 +256,7 @@ input[type="radio"] {
   display: none;
 }
 
-label {
+.index label {
   padding: 10px 20px;
   background: #eee;
   margin-right: 5px;
@@ -188,7 +266,7 @@ label {
 }
 
 input[type="radio"]:checked+label {
-  background: #00468b;
+  background: #7c5eb3;
   color: white;
 }
 
