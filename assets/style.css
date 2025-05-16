@@ -10,6 +10,27 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* ----------------conteudo geral------------------------------ */
+.conteudo {
+  align-items: center;
+  align-content: space-between;
+  display:flex;
+  position: flex;
+  padding-top: 50px;
+
+}
+
+.conteudo img {
+  width: 300px;
+  border-radius: 10px;
+  margin-left: 40px;
+
+}
+
+.conteudo p {
+  margin-left: 40px;
+}
+
 /* -----------------------------------------------------HEADER----------------------------------------- */
 
 .top-bar {
@@ -21,7 +42,9 @@ body {
   align-items: center;
 }
 
-.left, .center, .right {
+.left,
+.center,
+.right {
   display: flex;
   align-items: center;
 }
@@ -76,20 +99,22 @@ body {
 /* ------------------------------------------------Menu flutuante Institucional---------------------------------------- */
 
 .menu {
-  position: relative; /* importante para o submenu ser posicionado relativamente */
+  position: relative;
+  /* importante para o submenu ser posicionado relativamente */
 }
 
 .menu-dropdown {
   display: none;
   position: absolute;
-  top: 100%; /* fica logo abaixo do menu */
+  top: 100%;
+  /* fica logo abaixo do menu */
   left: 0;
   background-color: white;
   color: black;
   min-width: 220px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   padding: 0;
   margin: 0;
@@ -110,7 +135,7 @@ body {
   display: block;
 }
 
- /* --------------------------------------------MENU DOE PARA ACAPRA----------------------------------------- */
+/* --------------------------------------------MENU DOE PARA ACAPRA----------------------------------------- */
 
 .imagem-hover {
   position: relative;
@@ -119,13 +144,14 @@ body {
 .img-dropdown {
   display: none;
   position: absolute;
-  top: 100%; /* abaixo do texto */
+  top: 100%;
+  /* abaixo do texto */
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
@@ -139,9 +165,43 @@ body {
   display: block;
 }
 
+/* ----------------------------missao/visao------------------- */
 
 
 
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
 
+input[type="radio"] {
+  display: none;
+}
 
+label {
+  padding: 10px 20px;
+  background: #eee;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.3s;
+}
 
+input[type="radio"]:checked+label {
+  background: #00468b;
+  color: white;
+}
+
+.content {
+  width: 850px;
+  display: none;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#missao:checked~.conteudo-missao,
+#visao:checked~.conteudo-visao {
+  display: block;
+}
